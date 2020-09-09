@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <!--Questions strings-->
+    <string name="what_is_android_jetpack">1-What is Android Jetpack?</string>
+    <string name="base_class_for_layout">2-Base class for Layout?</string>
+    <string name="layout_for_complex_screens">3-Layout for complex Screens?</string>
+    <string name="registers_app_with_launcher">4-Registers app with launcher?</string>
+    <string name="build_system_for_android">5-Build system for Android?</string>
+    <string name="view_to_display_images">6-View to display images?</string>
+
+    <!--Suggestions strings-->
+    <string name="tools">tools</string>
+    <string name="libraries">libraries</string>
+    <string name="programming_language">programming language</string>
+    <string name="documentation">documentation</string>
+    <string name="viewcollection">ViewCollection</string>
+    <string name="viewset">ViewSet</string>
+    <string name="viewgroup">ViewGroup</string>
+    <string name="viewroot">ViewRoot</string>
+    <string name="constraintlayout">ConstraintLayout</string>
+    <string name="linearlayout">LinearLayout</string>
+    <string name="gridlayout">GridLayout</string>
+    <string name="framelayout">FrameLayout</string>
+    <string name="app_registry">app-registry</string>
+    <string name="intent_filter">intent-filter</string>
+    <string name="app_launcher">app-launcher</string>
+    <string name="launcher_registry">launcher-registry</string>
+    <string name="gradle">Gradle</string>
+    <string name="image_view">ImageView</string>
+
+    <!--EditText hint string-->
+    <string name="enter_your_answer">Enter your answer</string>
+
+    <!--Buttons strings-->
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="play_again">Play again</string>
+
+    <string name="toast_message">please answer before to go</string>
+    <string name="view_score">View score</string>
+    <string name="final_score">You scored :</string>
+    <string name="score_result">%d from 6</string>
+</resources>

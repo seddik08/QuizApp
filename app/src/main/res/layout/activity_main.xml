@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/question_one_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:layout_marginBottom="16dp"
+                android:text="@string/what_is_android_jetpack" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/android_jetpack" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/question_one_suggestion_one"
+                style="@style/SuggestionStyle"
+                android:text="@string/tools" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/question_one_suggestion_two"
+                style="@style/SuggestionStyle"
+                android:text="@string/libraries" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/question_one_suggestion_three"
+                style="@style/SuggestionStyle"
+                android:text="@string/programming_language" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/question_one_suggestion_four"
+                style="@style/SuggestionStyle"
+                android:text="@string/documentation" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_two_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/base_class_for_layout" />
+
+            <RadioGroup
+                android:id="@+id/question_two_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_two_suggestion_one"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viewcollection" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_two_suggestion_two"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viewset" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_two_suggestion_three"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viewgroup" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_two_suggestion_four"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/viewroot" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_three_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/layout_for_complex_screens" />
+
+            <RadioGroup
+                android:id="@+id/question_three_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_three_suggestion_one"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/constraintlayout" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_three_suggestion_two"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linearlayout" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_three_suggestion_three"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gridlayout" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_three_suggestion_four"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/framelayout" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_four_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/registers_app_with_launcher" />
+
+            <RadioGroup
+                android:id="@+id/question_four_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_four_suggestion_one"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_registry" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_four_suggestion_two"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intent_filter" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_four_suggestion_three"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_launcher" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/question_four_suggestion_four"
+                    style="@style/SuggestionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/launcher_registry" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_five_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:layout_marginBottom="80dp"
+                android:text="@string/build_system_for_android" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/question_five_edit_text"
+                style="@style/EditTextStyle"
+                android:hint="@string/enter_your_answer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_six_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/QuestionStyle"
+                android:layout_marginBottom="80dp"
+                android:text="@string/view_to_display_images" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/question_six_edit_text"
+                style="@style/EditTextStyle"
+                android:hint="@string/enter_your_answer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/score_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/ScoreTextViewStyle"
+                android:layout_marginBottom="10dp"
+                android:text="@string/final_score" />
+
+            <TextView
+                android:id="@+id/score_text_view"
+                style="@style/ScoreTextViewStyle"
+                android:layout_marginBottom="200dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/play_again_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/play_again_button_selector_background"
+                android:onClick="playAgain"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/play_again"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_submit_button"
+            style="@style/ButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="onSubmitOrNextClicked"
+            android:text="@string/submit" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/previous_button"
+            style="@style/ButtonStyle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="onPreviousGetClicked"
+            android:text="@string/previous"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>
